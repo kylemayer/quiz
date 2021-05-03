@@ -29,14 +29,12 @@ button.addEventListener('click', ()=> {
 
     const answer2 = prompt('Can the holder of the stone turn wood into gold?');
 
-
     if (!checkForYes(answer2)) {
         score++;
     }
 
     const answer3 = prompt('Can the stone transmute common crystals into precious stones and diamond?');
     
-
     if (checkForYes(answer3)) {
         score++;
     }
