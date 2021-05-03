@@ -17,9 +17,8 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+
+
 }
 
 main {
@@ -28,12 +27,13 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url('https://alchemix.fi/img/SpaceBg45.ff8a9823.png');
+    background-repeat: repeat;
+    background-position: center;
 }
 
 section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,72 +42,58 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
-}
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
 }
 
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-}
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
+    font-family: 'Sora', sans-serif;
+    color: white;
 }
 
 p {
     margin: var(--gutter);
+    font-family: 'Sora', sans-serif;
+    font-weight: 300; 
+    max-width: 60%;
+    color: white;
+    background-color: rgba(192, 192, 192, 0.062);
+    border-radius: 20px;
+    padding: 10px;
+
 }
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+
+
+
+
+img {
+    width: 400px;
+    height: 537px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px;
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+.congrats {
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Sora', sans-serif;
+    color: white;
+}
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
 
-  }
+.myButton {
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(to bottom,blue,indigo,violet);
+    color: white;
+    border: solid 1px white;
+}
